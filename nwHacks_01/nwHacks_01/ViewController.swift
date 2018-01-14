@@ -10,7 +10,7 @@ import SceneKit
 import ARKit
 import Vision
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+class ViewController: UIViewController, ARSCNViewDelegate, UITextFieldDelegate {
     
     // SCENE
     @IBOutlet var sceneView: ARSCNView!
@@ -22,10 +22,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     let dispatchQueueML = DispatchQueue(label: "com.hw.dispatchqueueml") // A Serial Queue
     @IBOutlet weak var debugTextView: UITextView!
     @IBOutlet weak var textFieldInput: UITextField!
+    @IBOutlet weak var statusLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        textFieldInput.delegate = self
         textFieldInput.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         textFieldInput.addTarget(self, action: #selector(textFieldEnabled(_:)), for: UIControlEvents.touchDown)
         
@@ -107,7 +108,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @objc func handleTap(gestureRecognize: UITapGestureRecognizer) {
         // HIT TEST : REAL WORLD
         // Get Screen Centre
-        print("tapped")
         let screenCentre : CGPoint = CGPoint(x: self.sceneView.bounds.midX, y: self.sceneView.bounds.midY)
         
         let arHitTestResults : [ARHitTestResult] = sceneView.hitTest(screenCentre, types: [.featurePoint]) // Alternatively, we could use '.existingPlaneUsingExtent' for more grounded hit-test-points.
@@ -129,7 +129,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
-        print("changing")
         if (currentNode != nil) {
             currentNode?.removeFromParentNode()
         }
@@ -139,18 +138,27 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let arHitTestResults : [ARHitTestResult] = sceneView.hitTest(screenCentre, types: [.featurePoint]) // Alternatively, we could use '.existingPlaneUsingExtent' for more grounded hit-test-points.
         
         if let closestResult = arHitTestResults.first {
-            print(3)
             // Get Coordinates of HitTest
             let transform : matrix_float4x4 = closestResult.worldTransform
             let worldCoord : SCNVector3 = SCNVector3Make(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
             
             // Create 3D Text
             let node : SCNNode = createNewBubbleParentNode(textField.text!)
-            print(node)
             sceneView.scene.rootNode.addChildNode(node)
             node.position = worldCoord
             currentNode = node
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textFieldInput.resignFirstResponder()
+        let input = textFieldInput.text! + " "
+        if (input == latestPrediction) {
+            statusLabel.text = "SUCCESS"
+        } else {
+            statusLabel.text = "FAILED"
+        }
+        return true
     }
     
     var counter = 0

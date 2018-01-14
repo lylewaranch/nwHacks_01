@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="Jh1-si-rKx">
             <objects>
-                <viewController id="9wR-FK-FSU" customClass="ViewController" customModule="SeeCar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9wR-FK-FSU" customClass="ViewController" customModule="nwHacks_01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eOC-zn-mih">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -35,11 +35,6 @@
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EB9-Tc-qC8">
                                 <rect key="frame" x="176" y="322" width="22" height="22"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfg-ZN-fNW">
-                                <rect key="frame" x="148" y="616" width="79" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Submit"/>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mNa-Ai-CV7">
                                 <rect key="frame" x="139" y="318" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -47,8 +42,15 @@
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QP5-Be-sWv">
+                                <rect key="frame" x="166" y="194" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -67,6 +69,7 @@
                     <connections>
                         <outlet property="debugTextView" destination="gWj-Pd-926" id="BlW-8C-0RI"/>
                         <outlet property="sceneView" destination="maC-Pl-fgh" id="Lbg-rC-xOJ"/>
+                        <outlet property="statusLabel" destination="QP5-Be-sWv" id="SjZ-kr-HWf"/>
                         <outlet property="textFieldInput" destination="mNa-Ai-CV7" id="YPb-B0-e2B"/>
                     </connections>
                 </viewController>
