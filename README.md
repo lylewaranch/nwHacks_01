@@ -10,7 +10,7 @@ CARETT stands for Complete Augmented REality Turing Test.
 
 _CARETT User **Unsuccessfully** Identifies the Object Shown, Thus Failing the Human Verification_
 
-![CARETT in Action (Failure)](/demo.gif)
+![CARETT in Action (Failure)](/demo1.gif)
 
 _CARETT User **Successfully** Identifies The Object Shown, Thus Passing the Human Verification_
 
