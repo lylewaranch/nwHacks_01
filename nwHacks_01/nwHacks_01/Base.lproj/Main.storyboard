@@ -18,21 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Po-td-Tk9">
-                                <rect key="frame" x="49" y="403" width="277" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="I'm not a robot">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="9wR-FK-FSU" kind="show" id="yla-Wk-OES"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="carett_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="yit-JY-c2o">
-                                <rect key="frame" x="67" y="98" width="240" height="210"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diamond.png" translatesAutoresizingMaskIntoConstraints="NO" id="yit-JY-c2o">
+                                <rect key="frame" x="67" y="68" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -40,7 +27,7 @@
                         <viewLayoutGuide key="safeArea" id="Pqk-J0-Jio"/>
                     </view>
                     <connections>
-                        <outlet property="verifyButton" destination="4Po-td-Tk9" id="9LE-v4-iIf"/>
+                        <segue destination="9wR-FK-FSU" kind="show" identifier="showCamera" id="FQV-ET-XOc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cop-B6-g2E" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -108,6 +95,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="carett_2.png" width="1280" height="944"/>
+        <image name="diamond.png" width="512" height="512"/>
     </resources>
 </document>

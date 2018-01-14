@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B5805C6F3F87C6BF158C7C4480554FFE"
-               BuildableName = "Pods_nwHacks_01.framework"
-               BlueprintName = "Pods-nwHacks_01"
+               BlueprintIdentifier = "830531D097A1A654F5660BC5017740C4"
+               BuildableName = "ButtonProgressBar_iOS.framework"
+               BlueprintName = "ButtonProgressBar-iOS"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B5805C6F3F87C6BF158C7C4480554FFE"
-            BuildableName = "Pods_nwHacks_01.framework"
-            BlueprintName = "Pods-nwHacks_01"
+            BlueprintIdentifier = "830531D097A1A654F5660BC5017740C4"
+            BuildableName = "ButtonProgressBar_iOS.framework"
+            BlueprintName = "ButtonProgressBar-iOS"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

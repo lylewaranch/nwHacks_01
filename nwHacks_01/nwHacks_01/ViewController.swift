@@ -157,11 +157,13 @@ class ViewController: UIViewController, ARSCNViewDelegate, UITextFieldDelegate {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "IntroViewController") as! IntroViewController
             controller.didSucceed = true
+            controller.hasVerified = true
             self.present(controller, animated: true, completion: nil)
         } else {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "IntroViewController") as! IntroViewController
             controller.didSucceed = false
+            controller.hasVerified = true
             self.present(controller, animated: true, completion: nil)
         }
         return true

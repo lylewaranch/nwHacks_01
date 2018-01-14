@@ -4,19 +4,26 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-nwHacks_01.xcscheme</key>
+		<key>ButtonProgressBar-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>TransitionButton.xcscheme</key>
+		<key>Pods-nwHacks_01.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>TransitionButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

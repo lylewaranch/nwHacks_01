@@ -7,86 +7,148 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BA1AE1193FC0821EAD9DE3C332AA7D9 /* Pods-nwHacks_01-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C6D69DD2E55F72D07C23D4FA3D32D0 /* Pods-nwHacks_01-dummy.m */; };
-		352F67B536A3DE1C87B7CCB554229742 /* TransitionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5E4B63CC746C1AFBD6097771CF951 /* TransitionButton-dummy.m */; };
-		3CC4095102ACA548662E1C3F433576A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		6041D09D509C1C382FCF3D63BC1F2EF2 /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD916774F662BF07452242B4A1C055F /* SpinerLayer.swift */; };
-		6E3FF6CF06C58464D9D84DBC9BB50427 /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71774896FEAF20037437E03690629556 /* CGRectExtension.swift */; };
-		7E3A74A6B39034EBEC342534E590C8A6 /* TransitionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD80F5B9DD01B7A2C0FD9E468547918B /* TransitionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8DF9BAB131EFBC127BD162BD99885AEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		C5861D32912D3B36047061EE7137A2A0 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F88A44376B0BA487E4D474A9F901B32 /* FadeTransition.swift */; };
-		D78AD9F44CC219CE9915EB77502C42BE /* Pods-nwHacks_01-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0385D8F6D1A6BEF2D5332848DE17A74F /* Pods-nwHacks_01-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D81A1B4CD6B15AA04FF06ED89A5CCF5A /* CustomTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596F377176A538EC15C556C00CD93C14 /* CustomTransitionViewController.swift */; };
-		DA45D0A2A5A9A5EF273E3F36A6D71211 /* TransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3688C893AB618C3028129D9C735B1F8 /* TransitionButton.swift */; };
-		EE8DDF96DAEECBAC7BA55E824DA54FB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		140746F5F14B893F62D659F5DEE11CC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		1914F085DF08ED95DC4BD736C2952ABC /* TransitionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D3FC0B23C2F0C53CE0A3584DF08035 /* TransitionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27B2D41FE651D8D8888F3C362E9435BC /* TransitionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 041D67F9C9A18A2EE45E090C8B917011 /* TransitionButton-dummy.m */; };
+		2B92D868E03C1EAA65E7D43CACEA233D /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABCBC12A97459F744231D007776F9C /* SpinerLayer.swift */; };
+		37EEE19E7849C4730510D0E76E6DFF94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		392BCD4DCC3E7B77B8F7C531E704E7F1 /* ButtonProgressBar-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3EEF56F4BD9D88D4D51FBD96CFF847F /* ButtonProgressBar-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F3AF7006FEE8B6EFC2F47917E95ACF8 /* Pods-nwHacks_01-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0385D8F6D1A6BEF2D5332848DE17A74F /* Pods-nwHacks_01-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67EF0D9E530447817FA4D0C5A4D37FCA /* ButtonProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBCF30FB5C59E19385881453407826A /* ButtonProgressBar.swift */; };
+		6E99457EDDC8A70E3036EC34C51CB230 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA106857BA8EDF92C05ABAA320620D36 /* FadeTransition.swift */; };
+		724B1EC0FBA434CE9C16BAB1FBE2F0E9 /* Pods-nwHacks_01-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C6D69DD2E55F72D07C23D4FA3D32D0 /* Pods-nwHacks_01-dummy.m */; };
+		80B5DC7B8228B4735496238511531E26 /* ButtonProgressBar-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F727B9F7A84B2685968BFC7FDB758 /* ButtonProgressBar-iOS-dummy.m */; };
+		93C4F27383A9E0C47911076BE4FD9478 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		A058BC5AFF51026C0BE66B816D63F5AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		D5E42CF7AD35962125D9FE4029E8E4FC /* TransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0780936B26EFE42F45EFA40F8DFAA06 /* TransitionButton.swift */; };
+		E19FD274739F99F5FF8BB59529C97C59 /* CustomTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B94AE5126D78623C16DF861AA8C58D /* CustomTransitionViewController.swift */; };
+		F064F516541737BE266A79A3E0DE101B /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9FBF270772F1E1B51979BE820BF3D0 /* CGRectExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F415FC971B2BFBDABAA0E9EEAB8269B7 /* PBXContainerItemProxy */ = {
+		2E4621CECCF5A53FE4B99EFCB310D965 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 72D8E063827DF8F65BF7EF3999BC582B;
+			remoteGlobalIDString = FDA166566956BE71F8121104C4C29906;
 			remoteInfo = TransitionButton;
+		};
+		F25F2358C989E1A4DEE5D4D5EF84FF76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830531D097A1A654F5660BC5017740C4;
+			remoteInfo = "ButtonProgressBar-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0385D8F6D1A6BEF2D5332848DE17A74F /* Pods-nwHacks_01-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-nwHacks_01-umbrella.h"; sourceTree = "<group>"; };
-		1275296A784409B80C17562B221FBA53 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041D67F9C9A18A2EE45E090C8B917011 /* TransitionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TransitionButton-dummy.m"; sourceTree = "<group>"; };
+		12A78EC19F8D807241A945EC491BC704 /* Pods_nwHacks_01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_nwHacks_01.framework; path = "Pods-nwHacks_01.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3C086A9917794BD9141F0A1EB28F44 /* Pods-nwHacks_01.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-nwHacks_01.modulemap"; sourceTree = "<group>"; };
-		1BB5E4B63CC746C1AFBD6097771CF951 /* TransitionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TransitionButton-dummy.m"; sourceTree = "<group>"; };
-		589F977DF12C940C133671DC490DD1A2 /* TransitionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TransitionButton.framework; path = TransitionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		596F377176A538EC15C556C00CD93C14 /* CustomTransitionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomTransitionViewController.swift; path = Source/CustomTransitionViewController.swift; sourceTree = "<group>"; };
+		22B94AE5126D78623C16DF861AA8C58D /* CustomTransitionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomTransitionViewController.swift; path = Source/CustomTransitionViewController.swift; sourceTree = "<group>"; };
+		2DBCF30FB5C59E19385881453407826A /* ButtonProgressBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonProgressBar.swift; path = Source/ButtonProgressBar.swift; sourceTree = "<group>"; };
+		321F727B9F7A84B2685968BFC7FDB758 /* ButtonProgressBar-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ButtonProgressBar-iOS-dummy.m"; sourceTree = "<group>"; };
+		353B94EDE98018227D5B04FFB35E8F41 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		406A3140982B4BB3DE27915B477E7E9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5546E3128E38B0118397F675324472B3 /* ButtonProgressBar-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "ButtonProgressBar-iOS.modulemap"; sourceTree = "<group>"; };
+		62ABCBC12A97459F744231D007776F9C /* SpinerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinerLayer.swift; path = Source/SpinerLayer.swift; sourceTree = "<group>"; };
 		6D03609B6A163BB40E82D0491BF46E0B /* Pods-nwHacks_01-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-nwHacks_01-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6F88A44376B0BA487E4D474A9F901B32 /* FadeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FadeTransition.swift; path = Source/FadeTransition.swift; sourceTree = "<group>"; };
-		71774896FEAF20037437E03690629556 /* CGRectExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectExtension.swift; path = Source/CGRectExtension.swift; sourceTree = "<group>"; };
+		7E863A6C1E809977419A61240B899893 /* TransitionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionButton-prefix.pch"; sourceTree = "<group>"; };
 		8F943826585EB533C7FEE6FEF99F5D4E /* Pods-nwHacks_01-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-nwHacks_01-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98D1434747244818C7D94444DFC5AAD1 /* TransitionButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransitionButton.xcconfig; sourceTree = "<group>"; };
-		9B3BFE0748E5EB6C5C157C534F6B495E /* Pods_nwHacks_01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_nwHacks_01.framework; path = "Pods-nwHacks_01.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A439E53975C16C3930A281D5D4E23C61 /* TransitionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TransitionButton.framework; path = TransitionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E555427E056443D9D4AC0D82027104 /* Pods-nwHacks_01-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-nwHacks_01-resources.sh"; sourceTree = "<group>"; };
-		AAC3F778CDF4C89A6C25B38D66AA7D74 /* TransitionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionButton-prefix.pch"; sourceTree = "<group>"; };
-		AD80F5B9DD01B7A2C0FD9E468547918B /* TransitionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionButton-umbrella.h"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B9C6D69DD2E55F72D07C23D4FA3D32D0 /* Pods-nwHacks_01-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-nwHacks_01-dummy.m"; sourceTree = "<group>"; };
+		BB9FBF270772F1E1B51979BE820BF3D0 /* CGRectExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectExtension.swift; path = Source/CGRectExtension.swift; sourceTree = "<group>"; };
 		BE1790BD13F7B9F1841A76AD28B4D87D /* Pods-nwHacks_01-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nwHacks_01-acknowledgements.plist"; sourceTree = "<group>"; };
-		CE1C1D17A53C1FF913F84D576B9504A1 /* TransitionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TransitionButton.modulemap; sourceTree = "<group>"; };
+		D0780936B26EFE42F45EFA40F8DFAA06 /* TransitionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionButton.swift; path = Source/TransitionButton.swift; sourceTree = "<group>"; };
 		D25441DD08C0E47FC0C6DC64DAF66F59 /* Pods-nwHacks_01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nwHacks_01.debug.xcconfig"; sourceTree = "<group>"; };
-		D3688C893AB618C3028129D9C735B1F8 /* TransitionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionButton.swift; path = Source/TransitionButton.swift; sourceTree = "<group>"; };
+		D2D3FC0B23C2F0C53CE0A3584DF08035 /* TransitionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionButton-umbrella.h"; sourceTree = "<group>"; };
+		D58B6F10AA2628541DE305C352180AEF /* TransitionButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransitionButton.xcconfig; sourceTree = "<group>"; };
+		D8713699B800387A3C27E8761C4286AF /* ButtonProgressBar_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ButtonProgressBar_iOS.framework; path = "ButtonProgressBar-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DFD916774F662BF07452242B4A1C055F /* SpinerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinerLayer.swift; path = Source/SpinerLayer.swift; sourceTree = "<group>"; };
+		D92DC42289B44C2709F640EC519BF8EA /* ButtonProgressBar-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ButtonProgressBar-iOS-prefix.pch"; sourceTree = "<group>"; };
+		DA106857BA8EDF92C05ABAA320620D36 /* FadeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FadeTransition.swift; path = Source/FadeTransition.swift; sourceTree = "<group>"; };
+		DA18D5FD3BE452D32E78E352DBD3DA12 /* ButtonProgressBar-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ButtonProgressBar-iOS.xcconfig"; sourceTree = "<group>"; };
 		E512BF64B672ED47CAB89C82616AA307 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A1EAEB07DD72C8F34475CFBF30DFA3 /* TransitionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TransitionButton.modulemap; sourceTree = "<group>"; };
+		F3EEF56F4BD9D88D4D51FBD96CFF847F /* ButtonProgressBar-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ButtonProgressBar-iOS-umbrella.h"; sourceTree = "<group>"; };
 		F9CAD59134157A7B3107D7CA2A96233C /* Pods-nwHacks_01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nwHacks_01.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3D424852C50CEDDEB476617C875C53E8 /* Frameworks */ = {
+		43BD1B5FF0AA6CF439959682D185D7AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CC4095102ACA548662E1C3F433576A3 /* Foundation.framework in Frameworks */,
+				93C4F27383A9E0C47911076BE4FD9478 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6BFA32EF9B3819D76E511637BACB85E2 /* Frameworks */ = {
+		BFB22C673A659C5939D389C119EC4EBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DF9BAB131EFBC127BD162BD99885AEA /* Foundation.framework in Frameworks */,
-				EE8DDF96DAEECBAC7BA55E824DA54FB2 /* UIKit.framework in Frameworks */,
+				A058BC5AFF51026C0BE66B816D63F5AB /* Foundation.framework in Frameworks */,
+				37EEE19E7849C4730510D0E76E6DFF94 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6452F912BEFC8B32B65CA13A3A6AAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				140746F5F14B893F62D659F5DEE11CC1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4120C4A6E7180A54DE765FA4AE6A6BD3 /* Pods */ = {
+		09DC659D3098C87647D168D3FDC26BB0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FA2E2D331425E79EC684AE0B46FDA992 /* TransitionButton */,
+				42870B8ABD8FCD60F54AB044360804FE /* ButtonProgressBar-iOS */,
+				8694484AA021BAA65D8609D5D887A1AC /* TransitionButton */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		0F448859B097BB176AEC4DD15F64C03E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5546E3128E38B0118397F675324472B3 /* ButtonProgressBar-iOS.modulemap */,
+				DA18D5FD3BE452D32E78E352DBD3DA12 /* ButtonProgressBar-iOS.xcconfig */,
+				321F727B9F7A84B2685968BFC7FDB758 /* ButtonProgressBar-iOS-dummy.m */,
+				D92DC42289B44C2709F640EC519BF8EA /* ButtonProgressBar-iOS-prefix.pch */,
+				F3EEF56F4BD9D88D4D51FBD96CFF847F /* ButtonProgressBar-iOS-umbrella.h */,
+				406A3140982B4BB3DE27915B477E7E9D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ButtonProgressBar-iOS";
+			sourceTree = "<group>";
+		};
+		42870B8ABD8FCD60F54AB044360804FE /* ButtonProgressBar-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2DBCF30FB5C59E19385881453407826A /* ButtonProgressBar.swift */,
+				0F448859B097BB176AEC4DD15F64C03E /* Support Files */,
+			);
+			name = "ButtonProgressBar-iOS";
+			path = "ButtonProgressBar-iOS";
+			sourceTree = "<group>";
+		};
+		42E6791E0EAC57925630F97B457E0D99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8713699B800387A3C27E8761C4286AF /* ButtonProgressBar_iOS.framework */,
+				12A78EC19F8D807241A945EC491BC704 /* Pods_nwHacks_01.framework */,
+				A439E53975C16C3930A281D5D4E23C61 /* TransitionButton.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -119,8 +181,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				4120C4A6E7180A54DE765FA4AE6A6BD3 /* Pods */,
-				D8DA103B757CD177D80973278ACC4577 /* Products */,
+				09DC659D3098C87647D168D3FDC26BB0 /* Pods */,
+				42E6791E0EAC57925630F97B457E0D99 /* Products */,
 				6013724E73385C18F3E796DDD5C8782F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -143,90 +205,107 @@
 			path = "Target Support Files/Pods-nwHacks_01";
 			sourceTree = "<group>";
 		};
-		D8DA103B757CD177D80973278ACC4577 /* Products */ = {
+		8694484AA021BAA65D8609D5D887A1AC /* TransitionButton */ = {
 			isa = PBXGroup;
 			children = (
-				9B3BFE0748E5EB6C5C157C534F6B495E /* Pods_nwHacks_01.framework */,
-				589F977DF12C940C133671DC490DD1A2 /* TransitionButton.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F0085B955AC77394D00F450331DCBDD7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1275296A784409B80C17562B221FBA53 /* Info.plist */,
-				CE1C1D17A53C1FF913F84D576B9504A1 /* TransitionButton.modulemap */,
-				98D1434747244818C7D94444DFC5AAD1 /* TransitionButton.xcconfig */,
-				1BB5E4B63CC746C1AFBD6097771CF951 /* TransitionButton-dummy.m */,
-				AAC3F778CDF4C89A6C25B38D66AA7D74 /* TransitionButton-prefix.pch */,
-				AD80F5B9DD01B7A2C0FD9E468547918B /* TransitionButton-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TransitionButton";
-			sourceTree = "<group>";
-		};
-		FA2E2D331425E79EC684AE0B46FDA992 /* TransitionButton */ = {
-			isa = PBXGroup;
-			children = (
-				71774896FEAF20037437E03690629556 /* CGRectExtension.swift */,
-				596F377176A538EC15C556C00CD93C14 /* CustomTransitionViewController.swift */,
-				6F88A44376B0BA487E4D474A9F901B32 /* FadeTransition.swift */,
-				DFD916774F662BF07452242B4A1C055F /* SpinerLayer.swift */,
-				D3688C893AB618C3028129D9C735B1F8 /* TransitionButton.swift */,
-				F0085B955AC77394D00F450331DCBDD7 /* Support Files */,
+				BB9FBF270772F1E1B51979BE820BF3D0 /* CGRectExtension.swift */,
+				22B94AE5126D78623C16DF861AA8C58D /* CustomTransitionViewController.swift */,
+				DA106857BA8EDF92C05ABAA320620D36 /* FadeTransition.swift */,
+				62ABCBC12A97459F744231D007776F9C /* SpinerLayer.swift */,
+				D0780936B26EFE42F45EFA40F8DFAA06 /* TransitionButton.swift */,
+				9A3E38AB073D7311A3D02FBFF0F6D033 /* Support Files */,
 			);
 			name = TransitionButton;
 			path = TransitionButton;
 			sourceTree = "<group>";
 		};
+		9A3E38AB073D7311A3D02FBFF0F6D033 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				353B94EDE98018227D5B04FFB35E8F41 /* Info.plist */,
+				E9A1EAEB07DD72C8F34475CFBF30DFA3 /* TransitionButton.modulemap */,
+				D58B6F10AA2628541DE305C352180AEF /* TransitionButton.xcconfig */,
+				041D67F9C9A18A2EE45E090C8B917011 /* TransitionButton-dummy.m */,
+				7E863A6C1E809977419A61240B899893 /* TransitionButton-prefix.pch */,
+				D2D3FC0B23C2F0C53CE0A3584DF08035 /* TransitionButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TransitionButton";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		CDD14C41A043B52F14C89F7DC22CB0AF /* Headers */ = {
+		6CE74428817D27562F7255F2026A1CD5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D78AD9F44CC219CE9915EB77502C42BE /* Pods-nwHacks_01-umbrella.h in Headers */,
+				392BCD4DCC3E7B77B8F7C531E704E7F1 /* ButtonProgressBar-iOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F683FBEACFFF55C23F39C018D3CC0C76 /* Headers */ = {
+		A2F797DC76C0D1B22470EE4465E577A7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E3A74A6B39034EBEC342534E590C8A6 /* TransitionButton-umbrella.h in Headers */,
+				1914F085DF08ED95DC4BD736C2952ABC /* TransitionButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0F3FD221ECA51FD9C4D3EECB9C46686 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3AF7006FEE8B6EFC2F47917E95ACF8 /* Pods-nwHacks_01-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2E95700DA204E30A2C678D9AD0F97198 /* Pods-nwHacks_01 */ = {
+		830531D097A1A654F5660BC5017740C4 /* ButtonProgressBar-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 513E9FFCF5D01AB100F375FBF3A331D8 /* Build configuration list for PBXNativeTarget "Pods-nwHacks_01" */;
+			buildConfigurationList = 921C584FE94AC94906A415CFC7434B53 /* Build configuration list for PBXNativeTarget "ButtonProgressBar-iOS" */;
 			buildPhases = (
-				1C36B3AE4A56BCBB7B73D1FB249A86C9 /* Sources */,
-				3D424852C50CEDDEB476617C875C53E8 /* Frameworks */,
-				CDD14C41A043B52F14C89F7DC22CB0AF /* Headers */,
+				078E90D28DB35B699AF10BABE44C8E8E /* Sources */,
+				EE6452F912BEFC8B32B65CA13A3A6AAF /* Frameworks */,
+				6CE74428817D27562F7255F2026A1CD5 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9B07ECF30D8A0B216C42DA1CEC8FEBD9 /* PBXTargetDependency */,
+			);
+			name = "ButtonProgressBar-iOS";
+			productName = "ButtonProgressBar-iOS";
+			productReference = D8713699B800387A3C27E8761C4286AF /* ButtonProgressBar_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B5805C6F3F87C6BF158C7C4480554FFE /* Pods-nwHacks_01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACEC64F2F9F9C1ADE7F6743C084B85A5 /* Build configuration list for PBXNativeTarget "Pods-nwHacks_01" */;
+			buildPhases = (
+				E72355C84F972AD48A733631428FBCDB /* Sources */,
+				43BD1B5FF0AA6CF439959682D185D7AF /* Frameworks */,
+				F0F3FD221ECA51FD9C4D3EECB9C46686 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E97ED0850A13AA32BF632CDAECC400F /* PBXTargetDependency */,
+				6125AA778F3E1674A370DE69628F83A4 /* PBXTargetDependency */,
 			);
 			name = "Pods-nwHacks_01";
 			productName = "Pods-nwHacks_01";
-			productReference = 9B3BFE0748E5EB6C5C157C534F6B495E /* Pods_nwHacks_01.framework */;
+			productReference = 12A78EC19F8D807241A945EC491BC704 /* Pods_nwHacks_01.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		72D8E063827DF8F65BF7EF3999BC582B /* TransitionButton */ = {
+		FDA166566956BE71F8121104C4C29906 /* TransitionButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18846156E8966DCB3F00DDEF7F15F13D /* Build configuration list for PBXNativeTarget "TransitionButton" */;
+			buildConfigurationList = 2697AC1069DC4A2ABEDE984BA8CFB7D0 /* Build configuration list for PBXNativeTarget "TransitionButton" */;
 			buildPhases = (
-				36083C4D0A47D9F7698E80D661A48617 /* Sources */,
-				6BFA32EF9B3819D76E511637BACB85E2 /* Frameworks */,
-				F683FBEACFFF55C23F39C018D3CC0C76 /* Headers */,
+				28F0A4AEE8CFFAEFD8DFF92F5646FA21 /* Sources */,
+				BFB22C673A659C5939D389C119EC4EBA /* Frameworks */,
+				A2F797DC76C0D1B22470EE4465E577A7 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -234,7 +313,7 @@
 			);
 			name = TransitionButton;
 			productName = TransitionButton;
-			productReference = 589F977DF12C940C133671DC490DD1A2 /* TransitionButton.framework */;
+			productReference = A439E53975C16C3930A281D5D4E23C61 /* TransitionButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -254,51 +333,67 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D8DA103B757CD177D80973278ACC4577 /* Products */;
+			productRefGroup = 42E6791E0EAC57925630F97B457E0D99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E95700DA204E30A2C678D9AD0F97198 /* Pods-nwHacks_01 */,
-				72D8E063827DF8F65BF7EF3999BC582B /* TransitionButton */,
+				830531D097A1A654F5660BC5017740C4 /* ButtonProgressBar-iOS */,
+				B5805C6F3F87C6BF158C7C4480554FFE /* Pods-nwHacks_01 */,
+				FDA166566956BE71F8121104C4C29906 /* TransitionButton */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1C36B3AE4A56BCBB7B73D1FB249A86C9 /* Sources */ = {
+		078E90D28DB35B699AF10BABE44C8E8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA1AE1193FC0821EAD9DE3C332AA7D9 /* Pods-nwHacks_01-dummy.m in Sources */,
+				80B5DC7B8228B4735496238511531E26 /* ButtonProgressBar-iOS-dummy.m in Sources */,
+				67EF0D9E530447817FA4D0C5A4D37FCA /* ButtonProgressBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36083C4D0A47D9F7698E80D661A48617 /* Sources */ = {
+		28F0A4AEE8CFFAEFD8DFF92F5646FA21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E3FF6CF06C58464D9D84DBC9BB50427 /* CGRectExtension.swift in Sources */,
-				D81A1B4CD6B15AA04FF06ED89A5CCF5A /* CustomTransitionViewController.swift in Sources */,
-				C5861D32912D3B36047061EE7137A2A0 /* FadeTransition.swift in Sources */,
-				6041D09D509C1C382FCF3D63BC1F2EF2 /* SpinerLayer.swift in Sources */,
-				352F67B536A3DE1C87B7CCB554229742 /* TransitionButton-dummy.m in Sources */,
-				DA45D0A2A5A9A5EF273E3F36A6D71211 /* TransitionButton.swift in Sources */,
+				F064F516541737BE266A79A3E0DE101B /* CGRectExtension.swift in Sources */,
+				E19FD274739F99F5FF8BB59529C97C59 /* CustomTransitionViewController.swift in Sources */,
+				6E99457EDDC8A70E3036EC34C51CB230 /* FadeTransition.swift in Sources */,
+				2B92D868E03C1EAA65E7D43CACEA233D /* SpinerLayer.swift in Sources */,
+				27B2D41FE651D8D8888F3C362E9435BC /* TransitionButton-dummy.m in Sources */,
+				D5E42CF7AD35962125D9FE4029E8E4FC /* TransitionButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E72355C84F972AD48A733631428FBCDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724B1EC0FBA434CE9C16BAB1FBE2F0E9 /* Pods-nwHacks_01-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9B07ECF30D8A0B216C42DA1CEC8FEBD9 /* PBXTargetDependency */ = {
+		2E97ED0850A13AA32BF632CDAECC400F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ButtonProgressBar-iOS";
+			target = 830531D097A1A654F5660BC5017740C4 /* ButtonProgressBar-iOS */;
+			targetProxy = F25F2358C989E1A4DEE5D4D5EF84FF76 /* PBXContainerItemProxy */;
+		};
+		6125AA778F3E1674A370DE69628F83A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TransitionButton;
-			target = 72D8E063827DF8F65BF7EF3999BC582B /* TransitionButton */;
-			targetProxy = F415FC971B2BFBDABAA0E9EEAB8269B7 /* PBXContainerItemProxy */;
+			target = FDA166566956BE71F8121104C4C29906 /* TransitionButton */;
+			targetProxy = 2E4621CECCF5A53FE4B99EFCB310D965 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07CE3AFEC3CCF6AF2142389883B515D2 /* Release */ = {
+		5A3EF8112370C2BA07E74A60951B40C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F9CAD59134157A7B3107D7CA2A96233C /* Pods-nwHacks_01.release.xcconfig */;
 			buildSettings = {
@@ -336,9 +431,9 @@
 			};
 			name = Release;
 		};
-		67CC61E07D5848DA17CF85593E8E2B7A /* Debug */ = {
+		8542AB2EEB3C508182D5EDFA22ABDDE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D25441DD08C0E47FC0C6DC64DAF66F59 /* Pods-nwHacks_01.debug.xcconfig */;
+			baseConfigurationReference = DA18D5FD3BE452D32E78E352DBD3DA12 /* ButtonProgressBar-iOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -352,28 +447,59 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-nwHacks_01/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ButtonProgressBar-iOS/ButtonProgressBar-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ButtonProgressBar-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-nwHacks_01/Pods-nwHacks_01.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ButtonProgressBar-iOS/ButtonProgressBar-iOS.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_nwHacks_01;
+				PRODUCT_NAME = ButtonProgressBar_iOS;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		8ABA5D7E41A4CB8D4D9E9359BFF71873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D58B6F10AA2628541DE305C352180AEF /* TransitionButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionButton/TransitionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransitionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TransitionButton/TransitionButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TransitionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		ABC1C622E3A94D5EFA80B6DBB5E64193 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -418,6 +544,80 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		D2C5C8A2ADB3B7C74DD0CBD478DC4723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D25441DD08C0E47FC0C6DC64DAF66F59 /* Pods-nwHacks_01.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-nwHacks_01/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-nwHacks_01/Pods-nwHacks_01.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_nwHacks_01;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3B4548A9EF014127700DC1AB06B6ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D58B6F10AA2628541DE305C352180AEF /* TransitionButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionButton/TransitionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransitionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TransitionButton/TransitionButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TransitionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		D72E489B59C3A70112D2342F402BD262 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -468,9 +668,9 @@
 			};
 			name = Debug;
 		};
-		DE304B81879BCFBB76863DDD74359A2A /* Release */ = {
+		FE3AA5CDE96EAC33B578AF8DDD50AC37 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98D1434747244818C7D94444DFC5AAD1 /* TransitionButton.xcconfig */;
+			baseConfigurationReference = DA18D5FD3BE452D32E78E352DBD3DA12 /* ButtonProgressBar-iOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -484,14 +684,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TransitionButton/TransitionButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TransitionButton/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ButtonProgressBar-iOS/ButtonProgressBar-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ButtonProgressBar-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TransitionButton/TransitionButton.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ButtonProgressBar-iOS/ButtonProgressBar-iOS.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TransitionButton;
+				PRODUCT_NAME = ButtonProgressBar_iOS;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -503,49 +703,14 @@
 			};
 			name = Release;
 		};
-		F5781DF80AF7C8D0D81A93EA4E6D7731 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98D1434747244818C7D94444DFC5AAD1 /* TransitionButton.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TransitionButton/TransitionButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TransitionButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TransitionButton/TransitionButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TransitionButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18846156E8966DCB3F00DDEF7F15F13D /* Build configuration list for PBXNativeTarget "TransitionButton" */ = {
+		2697AC1069DC4A2ABEDE984BA8CFB7D0 /* Build configuration list for PBXNativeTarget "TransitionButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F5781DF80AF7C8D0D81A93EA4E6D7731 /* Debug */,
-				DE304B81879BCFBB76863DDD74359A2A /* Release */,
+				D3B4548A9EF014127700DC1AB06B6ACA /* Debug */,
+				8ABA5D7E41A4CB8D4D9E9359BFF71873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -559,11 +724,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		513E9FFCF5D01AB100F375FBF3A331D8 /* Build configuration list for PBXNativeTarget "Pods-nwHacks_01" */ = {
+		921C584FE94AC94906A415CFC7434B53 /* Build configuration list for PBXNativeTarget "ButtonProgressBar-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				67CC61E07D5848DA17CF85593E8E2B7A /* Debug */,
-				07CE3AFEC3CCF6AF2142389883B515D2 /* Release */,
+				8542AB2EEB3C508182D5EDFA22ABDDE8 /* Debug */,
+				FE3AA5CDE96EAC33B578AF8DDD50AC37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACEC64F2F9F9C1ADE7F6743C084B85A5 /* Build configuration list for PBXNativeTarget "Pods-nwHacks_01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C5C8A2ADB3B7C74DD0CBD478DC4723 /* Debug */,
+				5A3EF8112370C2BA07E74A60951B40C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

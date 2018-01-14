@@ -7,4 +7,5 @@ target 'nwHacks_01' do
 
   # Pods for nwHacks_01
   pod 'TransitionButton'
+  pod "ButtonProgressBar-iOS"
 end

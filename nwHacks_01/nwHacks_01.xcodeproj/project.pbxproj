@@ -18,6 +18,9 @@
 		52F8BEF3200B357C008D7713 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 52F8BEF2200B357C008D7713 /* Resnet50.mlmodel */; };
 		52F8BEF5200B410E008D7713 /* CARETT.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F8BEF4200B410E008D7713 /* CARETT.png */; };
 		52F8BEF9200B47EE008D7713 /* carett_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F8BEF8200B47EE008D7713 /* carett_2.png */; };
+		52F8BEFD200BD0D7008D7713 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F8BEFC200BD0D7008D7713 /* diamond.png */; };
+		52F8BEFF200BDC28008D7713 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F8BEFE200BDC28008D7713 /* checkmark.png */; };
+		52F8BF01200BE259008D7713 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F8BF00200BE259008D7713 /* x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		52F8BEF2200B357C008D7713 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = ../../../../../../Downloads/Resnet50.mlmodel; sourceTree = "<group>"; };
 		52F8BEF4200B410E008D7713 /* CARETT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CARETT.png; path = ../../CARETT.png; sourceTree = "<group>"; };
 		52F8BEF8200B47EE008D7713 /* carett_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carett_2.png; path = ../../carett_2.png; sourceTree = "<group>"; };
+		52F8BEFC200BD0D7008D7713 /* diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = diamond.png; path = ../../diamond.png; sourceTree = "<group>"; };
+		52F8BEFE200BDC28008D7713 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkmark.png; path = ../../checkmark.png; sourceTree = "<group>"; };
+		52F8BF00200BE259008D7713 /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = x.png; path = ../../x.png; sourceTree = "<group>"; };
 		65339E38227594E6E47688E2 /* Pods-nwHacks_01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nwHacks_01.release.xcconfig"; path = "Pods/Target Support Files/Pods-nwHacks_01/Pods-nwHacks_01.release.xcconfig"; sourceTree = "<group>"; };
 		D77E1BA541130B3DB06579CE /* Pods-nwHacks_01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nwHacks_01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nwHacks_01/Pods-nwHacks_01.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +83,9 @@
 				52F8BED7200AE6AB008D7713 /* Main.storyboard */,
 				52F8BEF4200B410E008D7713 /* CARETT.png */,
 				52F8BEF8200B47EE008D7713 /* carett_2.png */,
+				52F8BEFC200BD0D7008D7713 /* diamond.png */,
+				52F8BEFE200BDC28008D7713 /* checkmark.png */,
+				52F8BF00200BE259008D7713 /* x.png */,
 				52F8BEDD200AE6AB008D7713 /* Assets.xcassets */,
 				52F8BEDF200AE6AB008D7713 /* LaunchScreen.storyboard */,
 				52F8BEE2200AE6AB008D7713 /* Info.plist */,
@@ -165,8 +174,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F8BF01200BE259008D7713 /* x.png in Resources */,
+				52F8BEFD200BD0D7008D7713 /* diamond.png in Resources */,
 				52F8BEF9200B47EE008D7713 /* carett_2.png in Resources */,
 				52F8BEF5200B410E008D7713 /* CARETT.png in Resources */,
+				52F8BEFF200BDC28008D7713 /* checkmark.png in Resources */,
 				52F8BEE1200AE6AB008D7713 /* LaunchScreen.storyboard in Resources */,
 				52F8BEDE200AE6AB008D7713 /* Assets.xcassets in Resources */,
 				52F8BED9200AE6AB008D7713 /* Main.storyboard in Resources */,
@@ -201,10 +213,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-nwHacks_01/Pods-nwHacks_01-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ButtonProgressBar-iOS/ButtonProgressBar_iOS.framework",
 				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ButtonProgressBar_iOS.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
