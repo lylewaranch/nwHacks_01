@@ -15,6 +15,7 @@ class IntroViewController: UIViewController {
     @IBOutlet weak var verifyButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        verifyButton.layer.cornerRadius = 5
         if (didSucceed == false) {
             verifyButton.backgroundColor = UIColor.red
         } else {
