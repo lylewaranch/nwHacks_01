@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		486C01313D9050091D0616EA /* Pods_nwHacks_01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE48951FCABCA7D82B02F49 /* Pods_nwHacks_01.framework */; };
 		52F8BED4200AE6AB008D7713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8BED3200AE6AB008D7713 /* AppDelegate.swift */; };
 		52F8BED6200AE6AB008D7713 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8BED5200AE6AB008D7713 /* ViewController.swift */; };
 		52F8BED9200AE6AB008D7713 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F8BED7200AE6AB008D7713 /* Main.storyboard */; };
 		52F8BEDC200AE6AB008D7713 /* nwHacks_01.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52F8BEDA200AE6AB008D7713 /* nwHacks_01.xcdatamodeld */; };
 		52F8BEDE200AE6AB008D7713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F8BEDD200AE6AB008D7713 /* Assets.xcassets */; };
 		52F8BEE1200AE6AB008D7713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F8BEDF200AE6AB008D7713 /* LaunchScreen.storyboard */; };
-		52F8BEEB200B0002008D7713 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 52F8BEEA200B0002008D7713 /* Resnet50.mlmodel */; };
+		52F8BEF1200B2D2E008D7713 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8BEF0200B2D2E008D7713 /* IntroViewController.swift */; };
+		52F8BEF3200B357C008D7713 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 52F8BEF2200B357C008D7713 /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DE48951FCABCA7D82B02F49 /* Pods_nwHacks_01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nwHacks_01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F8BED0200AE6AB008D7713 /* nwHacks_01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nwHacks_01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F8BED3200AE6AB008D7713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F8BED5200AE6AB008D7713 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +28,10 @@
 		52F8BEDD200AE6AB008D7713 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52F8BEE0200AE6AB008D7713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52F8BEE2200AE6AB008D7713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52F8BEEA200B0002008D7713 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = ../../../../../../Downloads/Resnet50.mlmodel; sourceTree = "<group>"; };
+		52F8BEF0200B2D2E008D7713 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		52F8BEF2200B357C008D7713 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = ../../../../../../Downloads/Resnet50.mlmodel; sourceTree = "<group>"; };
+		65339E38227594E6E47688E2 /* Pods-nwHacks_01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nwHacks_01.release.xcconfig"; path = "Pods/Target Support Files/Pods-nwHacks_01/Pods-nwHacks_01.release.xcconfig"; sourceTree = "<group>"; };
+		D77E1BA541130B3DB06579CE /* Pods-nwHacks_01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nwHacks_01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nwHacks_01/Pods-nwHacks_01.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				486C01313D9050091D0616EA /* Pods_nwHacks_01.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				52F8BED2200AE6AB008D7713 /* nwHacks_01 */,
 				52F8BED1200AE6AB008D7713 /* Products */,
+				5A3C50EFF2E56FE1411FB971 /* Pods */,
+				B3E8BD688E8FC4E7F4B11910 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +67,7 @@
 		52F8BED2200AE6AB008D7713 /* nwHacks_01 */ = {
 			isa = PBXGroup;
 			children = (
+				52F8BEF0200B2D2E008D7713 /* IntroViewController.swift */,
 				52F8BED3200AE6AB008D7713 /* AppDelegate.swift */,
 				52F8BED5200AE6AB008D7713 /* ViewController.swift */,
 				52F8BED7200AE6AB008D7713 /* Main.storyboard */,
@@ -65,9 +75,26 @@
 				52F8BEDF200AE6AB008D7713 /* LaunchScreen.storyboard */,
 				52F8BEE2200AE6AB008D7713 /* Info.plist */,
 				52F8BEDA200AE6AB008D7713 /* nwHacks_01.xcdatamodeld */,
-				52F8BEEA200B0002008D7713 /* Resnet50.mlmodel */,
+				52F8BEF2200B357C008D7713 /* Resnet50.mlmodel */,
 			);
 			path = nwHacks_01;
+			sourceTree = "<group>";
+		};
+		5A3C50EFF2E56FE1411FB971 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D77E1BA541130B3DB06579CE /* Pods-nwHacks_01.debug.xcconfig */,
+				65339E38227594E6E47688E2 /* Pods-nwHacks_01.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3E8BD688E8FC4E7F4B11910 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DE48951FCABCA7D82B02F49 /* Pods_nwHacks_01.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52F8BEE5200AE6AB008D7713 /* Build configuration list for PBXNativeTarget "nwHacks_01" */;
 			buildPhases = (
+				4BC91CF715791320CB7297D1 /* [CP] Check Pods Manifest.lock */,
 				52F8BECC200AE6AB008D7713 /* Sources */,
 				52F8BECD200AE6AB008D7713 /* Frameworks */,
 				52F8BECE200AE6AB008D7713 /* Resources */,
+				A41EFC92F32FC52F140170FD /* [CP] Embed Pods Frameworks */,
+				EEA02456FBE7EDEBF0842F09 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,12 +167,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4BC91CF715791320CB7297D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nwHacks_01-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A41EFC92F32FC52F140170FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-nwHacks_01/Pods-nwHacks_01-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nwHacks_01/Pods-nwHacks_01-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEA02456FBE7EDEBF0842F09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nwHacks_01/Pods-nwHacks_01-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52F8BECC200AE6AB008D7713 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F8BEEB200B0002008D7713 /* Resnet50.mlmodel in Sources */,
+				52F8BEF3200B357C008D7713 /* Resnet50.mlmodel in Sources */,
+				52F8BEF1200B2D2E008D7713 /* IntroViewController.swift in Sources */,
 				52F8BED6200AE6AB008D7713 /* ViewController.swift in Sources */,
 				52F8BEDC200AE6AB008D7713 /* nwHacks_01.xcdatamodeld in Sources */,
 				52F8BED4200AE6AB008D7713 /* AppDelegate.swift in Sources */,
@@ -280,6 +365,7 @@
 		};
 		52F8BEE6200AE6AB008D7713 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D77E1BA541130B3DB06579CE /* Pods-nwHacks_01.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +381,7 @@
 		};
 		52F8BEE7200AE6AB008D7713 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65339E38227594E6E47688E2 /* Pods-nwHacks_01.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

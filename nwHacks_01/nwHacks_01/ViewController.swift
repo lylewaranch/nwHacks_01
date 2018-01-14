@@ -2,13 +2,14 @@
 //  ViewController.swift
 //  CoreML in ARKit
 //
-//  Created by Lyle Waranch on 10/22/17.
+//  Created by Lyle Waranch on 1/13/18.
 //  Copyright © 2017 Lyle Waranch. All rights reserved.
 //
 import UIKit
 import SceneKit
 import ARKit
 import Vision
+import TransitionButton
 
 class ViewController: UIViewController, ARSCNViewDelegate, UITextFieldDelegate {
     
@@ -22,7 +23,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, UITextFieldDelegate {
     let dispatchQueueML = DispatchQueue(label: "com.hw.dispatchqueueml") // A Serial Queue
     @IBOutlet weak var debugTextView: UITextView!
     @IBOutlet weak var textFieldInput: UITextField!
-    @IBOutlet weak var statusLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -154,9 +154,15 @@ class ViewController: UIViewController, ARSCNViewDelegate, UITextFieldDelegate {
         textFieldInput.resignFirstResponder()
         let input = textFieldInput.text! + " "
         if (input == latestPrediction) {
-            statusLabel.text = "SUCCESS"
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "IntroViewController") as! IntroViewController
+            controller.didSucceed = true
+            self.present(controller, animated: true, completion: nil)
         } else {
-            statusLabel.text = "FAILED"
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "IntroViewController") as! IntroViewController
+            controller.didSucceed = false
+            self.present(controller, animated: true, completion: nil)
         }
         return true
     }

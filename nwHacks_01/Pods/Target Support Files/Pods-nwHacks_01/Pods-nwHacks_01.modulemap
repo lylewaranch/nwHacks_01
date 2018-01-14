@@ -1,0 +1,6 @@
+framework module Pods_nwHacks_01 {
+  umbrella header "Pods-nwHacks_01-umbrella.h"
+
+  export *
+  module * { export * }
+}
