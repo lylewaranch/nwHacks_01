@@ -10,6 +10,8 @@ CARETT stands for Complete Augmented REality Turing Test.
 
 ![CARETT Home Screen](/Image.png)
 
+_Home Screen_
+
 ![CARETT in Action](/Image2.png)
 
 _CARETT Asks User to Identify a Watter Bottle_
