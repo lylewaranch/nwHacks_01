@@ -27,7 +27,7 @@ class IntroViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        progressButton = ButtonProgressBar(frame: CGRect(x: 0, y: 500, width: self.view.frame.width*0.45, height: 44))
+        progressButton = ButtonProgressBar(frame: CGRect(x: 0, y: 500, width: self.view.frame.width*0.45, height: 60))
         progressButton.center.x = self.view.center.x
         progressButton.addTarget(nil, action: #selector(self.tapped), for: .touchUpInside)
         progressButton.setTitle("Verify", for: .normal)
